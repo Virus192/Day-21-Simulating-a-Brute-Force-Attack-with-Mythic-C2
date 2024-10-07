@@ -25,7 +25,7 @@ Before jumping into the action, let’s set up our environment. I’m using **Vu
 
 1. Log in to your Vultr account and open the Windows Server console.
 2. Create a file called `passwords.txt` on the server’s desktop.
-3. Write a fake password (e.g., `SuperSecret123!`) to simulate sensitive information.
+3. Write a fake password (e.g., `Winter123!`) to simulate sensitive information.
 4. Change the server password via Group Policy, reducing the minimum password character limit to 5, and update your password.
 
 ---
