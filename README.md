@@ -50,6 +50,8 @@ Before jumping into the action, let’s set up our environment. I’m using **Vu
     ```bash
     head -50 brute.txt > /home/kali/aurora-wordlist.txt
     ```
+    ![Example Image](https://raw.githubusercontent.com/Virus192/Day-21-Simulating-a-Brute-Force-Attack-with-Mythic-C2/refs/heads/main/Images/photo_6017298952233272262_w.jpg)
+    
 3. Edit the wordlist and insert the real password for proof of concept:
     ```bash
     nano /home/kali/aurora-wordlist.txt
@@ -93,6 +95,8 @@ Before jumping into the action, let’s set up our environment. I’m using **Vu
     ```bash
     ./mythic-cli install GitHub https://github.com/MythicAgents/Apollo.git
     ```
+    ![Example Image](https://raw.githubusercontent.com/Virus192/Day-21-Simulating-a-Brute-Force-Attack-with-Mythic-C2/refs/heads/main/Images/photo_6017298952233272252_w.jpg)
+
 
 #### Step 2: Install the HTTP C2 Profile
 
